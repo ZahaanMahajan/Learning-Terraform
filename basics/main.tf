@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "demo" {
-  bucket = "terraform-basic-01-372951851996-demo"
+  bucket = var.bucket_name
 
   tags = {
     Environment = "Learning"
